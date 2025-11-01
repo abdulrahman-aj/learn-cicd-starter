@@ -18,8 +18,8 @@ func TestGetAPIKey(t *testing.T) {
 			expectedAPIKey: "xyz",
 		},
 		"invalid API key": {
-			headers: http.Header{},
-			// expectedErr: auth.ErrNoAuthHeaderIncluded,
+			headers:     http.Header{},
+			expectedErr: auth.ErrNoAuthHeaderIncluded,
 		},
 	}
 
